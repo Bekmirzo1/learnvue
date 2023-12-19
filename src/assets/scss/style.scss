@@ -1,0 +1,25 @@
+@use "sass:math";
+@import "mixins.scss";
+
+$minWidth: 360px;
+
+$fontFamily: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$mainColor: #000;
+$grayColor: #b3b2b2;
+$redColor: #e41e1e;
+
+$fontSize: toRem(16);
+
+@import "null";
+
+body {
+}
+
+[class*="__container"] {
+    max-width: toRem(1200);
+    margin: 0 auto;
+    padding: 0 toRem(20);
+}
+
+@import "common";
+@import "forms";

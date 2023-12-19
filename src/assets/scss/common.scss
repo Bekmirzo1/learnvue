@@ -1,0 +1,51 @@
+.title {
+    font-size: toRem(40);
+    line-height: 120%;
+    font-weight: 700;
+}
+
+.gray {
+    color: $grayColor;
+}
+
+.btn {
+}
+
+.logo {
+    font-size: 20px;
+    color: lightgreen;
+    // text-transform: uppercase;
+    font-weight: 700;
+}
+
+.link {
+    color: blue;
+}
+//====================================================================================================
+.ui {
+    // .ui__blocks
+    &__blocks {
+        display: flex;
+        gap: toRem(30);
+        // flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    // .ui__block
+    &__block {
+        // &:not(:last-child) {
+        //     margin: 0px 0px 30px 0px;
+        // }
+    }
+    // .ui__title
+    &__title {
+        @extend .title;
+        margin: 0px 0px 20px 0px;
+    }
+    // .ui__title2
+    &__title2 {
+        font-size: 25px;
+        line-height: 120%;
+        font-weight: 700;
+        margin: 20px 0px 16px 0px;
+    }
+}
