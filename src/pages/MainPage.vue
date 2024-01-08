@@ -183,7 +183,7 @@ import FormWithValid from "@/components/FormWithValid.vue"
 import { useRouter } from "vue-router"
 
 import BasicMain from "@/pages/MainPage/BasicMain.vue"
-import TransitionMain from "@/pages/MainPage/transitionMain.vue"
+import TransitionMain from "@/pages/MainPage/TransitionMain.vue"
 // import "@/hooks/dont.js";
 //====================================================================================================
 // Vue router
