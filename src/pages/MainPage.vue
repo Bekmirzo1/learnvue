@@ -155,17 +155,17 @@
             <ul class="user-list">
               <li>
                 <router-link :to="'/users/' + users[0].id">
-                  Пользователь Андрей
+                  Пользователь {{ users[0].name }}
                 </router-link>
               </li>
               <li>
                 <router-link :to="String(users[0].id)">
-                  Тот же Андрей
+                  Тот же {{ users[0].name }}
                 </router-link>
               </li>
               <li>
                 <a href="" @click.prevent="router.push(String(users[1].id))"
-                  >Пользователь Саша</a
+                  >Пользователь {{ users[1].name }}</a
                 >
               </li>
             </ul>
@@ -192,9 +192,11 @@ const router = useRouter()
 let users = ref([
   {
     id: 1,
+    name: "Сергей",
   },
   {
     id: 2,
+    name: "Саша",
   },
 ])
 //====================================================================================================
